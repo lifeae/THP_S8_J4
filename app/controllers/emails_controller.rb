@@ -1,6 +1,7 @@
 class EmailsController < ApplicationController
 before_action :authenticate_user!
   def index
+    @mails = Email.all
   end
 
   def new
@@ -13,9 +14,6 @@ before_action :authenticate_user!
   end
 
   def update
-  end
-
-  def index
   end
 
   def destroy

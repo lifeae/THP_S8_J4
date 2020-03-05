@@ -5,7 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
 require 'faker'
 
 puts "Réinitialisation de la table Email"
@@ -21,5 +20,4 @@ seed = 1
     puts "Création du seed #{seed}"
     seed += 1
 end
-
 puts "Création des seeds terminées."
